@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="/js/echarts.js"></script>
+</head>
+<body>
+    <div id="main" style="width: 600px;height: 400px"></div>
+    <script type="text/javascript">
+        var myChart=echarts.init(   document.getElementById("main"));
+
+        myChart.setOption({
+            title:{
+                text:'echarts入门示例'
+            },
+            legend:{
+                data:['销量']
+            },
+            xAxis:{
+                data:["一月","二月","三月","四月","五月"]
+        },
+        yAxis:{
+
+        },
+        series:[
+            {
+                name:'销量',
+                type:'bar',
+                data:["15","16","17","18","19"]
+        },
+        ]
+
+        });
+    </script>
+
+</body>
+</html>
